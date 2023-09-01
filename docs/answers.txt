@@ -1,0 +1,53 @@
+Date of Completing Git Lab Tutorials: [09/01/2023]
+Date of GitHub Account Setup: [09/01/2023]
+
+Paste the console output you saved at the end of step 3.C 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	docs/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+Total Number of Commits:
+Command: git rev-list --all --count
+Answer: 9
+
+Last Update of README.md:
+Command: git log -1 -- README.md
+Answer: Author: root <root@CAVE>
+Date:   Fri Sep 1 12:41:26 2023 -0400
+
+    Updated README.md with my name and FSUID
+(END)
+
+Reasons for Using Branches:
+Isolating features for easier management.
+Enabling parallel development without messing up the main code.
+
+Difference Between git log and git status:
+git log: Shows the history of commits.
+git status: Displays the current state of the repo, like what's staged and what's not.
+
+Command to See Commits for 'Vehicle.h':
+Command: git log -- Vehicle.h
+
+Command to See Commits with 'file' in the Message:
+Command: git log --grep='file'
+
+Object-Oriented Programming Concepts:
+Inheritance: Enables a class to use another class's methods and fields.
+Polymorphism: Allows an object to be treated as an instance of its parent class.
+Encapsulation: The bundling of data with methods that operate on it.
+
+Dictator and Lieutenants vs Integration Manager:
+Dictator and Lieutenants: Central repo with lieutenants managing sub-repos.
+Integration Manager: Central repo, developers have their own, a manager integrates changes.
+
+How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? 
+Easier to manage large codebases and multiple features.
+Efficient handling of pull requests and code reviews.

@@ -47,10 +47,34 @@ Inheritance: Enables a class to use another class's methods and fields.
 Polymorphism: Allows an object to be treated as an instance of its parent class.
 Encapsulation: The bundling of data with methods that operate on it.
 
-Dictator and Lieutenants vs Integration Manager:
-Dictator and Lieutenants: Central repo with lieutenants managing sub-repos.
-Integration Manager: Central repo, developers have their own, a manager integrates changes.
+Dictator and Lieutenants vs. Integration Manager:
+- Dictator and Lieutenants Workflow:
+  - Central repo only accessible by the dictator.
+  - Lieutenants manage sub-repos.
+  - Developers push to lieutenant repos, then to dictator.
 
-How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? 
-Easier to manage large codebases and multiple features.
-Efficient handling of pull requests and code reviews.
+- Integration Manager Workflow:
+  - Central repo not directly pushed to.
+  - Developers have own forks.
+  - Integration Manager merges all changes.
+
+Benefits for a Team of 100 Developers:
+- Scalability:
+  - Dictator and Lieutenants: Easier to scale, distributed responsibility.
+  - Centralized: Single repo can bottleneck.
+
+- Conflict Resolution:
+  - Dictator and Lieutenants: Multi-level conflict resolution.
+  - Centralized: Single-point resolution less efficient.
+
+- Feature Isolation:
+  - Dictator and Lieutenants: Specific focus on features, parallel dev.
+  - Centralized: All features centrally managed, merge conflict risk.
+
+- Quality Control:
+  - Dictator and Lieutenants: Multi-layer scrutiny for quality.
+  - Centralized: Single layer scrutiny is riskier.
+
+- Efficient Code Reviews:
+  - Dictator and Lieutenants: Distributed reviews, more efficient.
+  - Centralized: Slower, single entity reviews.
